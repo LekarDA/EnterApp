@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EnterApp</string>
+    <string name="dialog_message">Do you want to delete item?</string>
+    <string name="positive">Yes</string>
+    <string name="negative">No</string>
+    <string name="success">Deletion was successful</string>
+</resources>
