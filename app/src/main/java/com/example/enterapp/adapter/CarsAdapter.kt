@@ -1,11 +1,12 @@
+
 package com.example.enterapp.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.enterapp.Car
-import com.example.enterapp.ItemClickListener
-import com.example.enterapp.ItemLongClickListener
+import com.example.enterapp.data.Car
+import com.example.enterapp.ui.list.ItemClickListener
+import com.example.enterapp.ui.list.ItemLongClickListener
 import com.example.enterapp.R
 
 class CarsAdapter: RecyclerView.Adapter<CarsViewHolder>() {

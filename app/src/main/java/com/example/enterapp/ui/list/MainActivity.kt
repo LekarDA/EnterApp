@@ -1,4 +1,4 @@
-package com.example.enterapp
+package com.example.enterapp.ui.list
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,7 +8,10 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener
+import com.example.enterapp.*
 import com.example.enterapp.adapter.CarsAdapter
+import com.example.enterapp.data.Car
+import com.example.enterapp.ui.detail.DetailActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -57,11 +60,11 @@ class MainActivity : AppCompatActivity(), ItemClickListener, ItemLongClickListen
         val builder = AlertDialog.Builder(this)
         builder.apply {
             setMessage(R.string.dialog_message)
-                .setPositiveButton(R.string.positive){ dialod,id -> 
+                .setPositiveButton(R.string.positive){ dialod, id ->
                     carsAdapter.deleteItem(car)
-                    Toast.makeText(context,R.string.success,Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, R.string.success,Toast.LENGTH_SHORT).show()
                 }
-            setNegativeButton(R.string.negative){dialog,id -> dialog.cancel()}
+            setNegativeButton(R.string.negative){ dialog, id -> dialog.cancel()}
         }
         val dialog = builder.create()
         dialog.show()

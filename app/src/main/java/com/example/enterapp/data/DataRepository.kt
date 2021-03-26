@@ -1,4 +1,4 @@
-package com.example.enterapp
+package com.example.enterapp.data
 
 
 import kotlinx.coroutines.Dispatchers
@@ -30,7 +30,7 @@ class DataRepository @Inject constructor() {
 
         withContext(Dispatchers.IO){
             carsName.forEachIndexed { index, name ->
-                list.add(index,Car(name,carsDescription[index],carPhotos[index],Date()))
+                list.add(index, Car(name,carsDescription[index],carPhotos[index],Date()))
             }
         }
         return list

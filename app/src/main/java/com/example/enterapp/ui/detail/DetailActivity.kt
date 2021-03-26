@@ -1,7 +1,10 @@
-package com.example.enterapp
+package com.example.enterapp.ui.detail
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.enterapp.R
+import com.example.enterapp.data.Car
+import com.example.enterapp.ui.list.MainActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_detail.*
 import java.text.SimpleDateFormat
